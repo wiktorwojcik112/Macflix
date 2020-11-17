@@ -1,2 +1,2 @@
 # Macflix
-Unofficial Netflix client for macOS
+Macflix is an unofficial Netflix client for macOS.

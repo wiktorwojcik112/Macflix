@@ -22,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		ED2D1F6D256977B00073D814 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		ED54A53C2773A3760019785B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ED5D7EBF259CA9CE00CF3017 /* Uberabout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uberabout.swift; sourceTree = "<group>"; };
 		ED5D7EC4259CB32800CF3017 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Main.strings; sourceTree = "<group>"; };
 		ED5D7EC7259CCEAE00CF3017 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		ED6EF91F2531C44200F0B62F = {
 			isa = PBXGroup;
 			children = (
+				ED54A53C2773A3760019785B /* README.md */,
 				ED6EF92A2531C44200F0B62F /* Macflix */,
 				ED6EF9292531C44200F0B62F /* Products */,
 				ED2D1F6C256977B00073D814 /* Frameworks */,

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED2D1F6F256977B50073D814 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2D1F6D256977B00073D814 /* WebKit.framework */; };
+		ED54A53D2773A56E0019785B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2D1F6D256977B00073D814 /* WebKit.framework */; };
 		ED5D7EC0259CA9CE00CF3017 /* Uberabout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5D7EBF259CA9CE00CF3017 /* Uberabout.swift */; };
 		ED6EF92C2531C44200F0B62F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6EF92B2531C44200F0B62F /* AppDelegate.swift */; };
 		ED6EF92E2531C44200F0B62F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6EF92D2531C44200F0B62F /* ViewController.swift */; };
@@ -44,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED2D1F6F256977B50073D814 /* WebKit.framework in Frameworks */,
+				ED54A53D2773A56E0019785B /* WebKit.framework in Frameworks */,
 				EDA08C1D2561AFE700059337 /* TelemetryClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,7 +321,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Macflix/Macflix.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = DNFYV2TZ3T;
@@ -344,7 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Macflix/Macflix.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = DNFYV2TZ3T;

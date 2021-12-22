@@ -11,7 +11,7 @@ import UserNotifications
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    let installedVersion = 1
+    let installedVersion = 2
     let aboutWindow: NSWindow = Uberabout.aboutWindow()
     
     @IBAction func openAboutWindow(_ sender: NSMenuItem) {
@@ -22,7 +22,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             if let url = URL(string: "https://wiktor.thedev.id/MacflixVersion.txt") {
                 do {
                     let currentVersionString = try String(contentsOf: url)
-                    print(try String(contentsOf: url))
                     
                     let scanInteger = Scanner(string: currentVersionString)
                     let currentVersion = scanInteger.scanInt()
@@ -72,7 +71,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        print(installedVersion)
+        print("Macflix version: \(installedVersion)")
         if let url = URL(string: "https://wiktor.thedev.id/MacflixVersion.txt") {
             do {
                 let currentVersionString = try String(contentsOf: url)

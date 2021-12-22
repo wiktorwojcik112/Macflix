@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="17008"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17505"/>
+        <plugIn identifier="com.apple.WebKit2IBPlugin" version="17505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Search Toolbar Item" minToolsVersion="12.0" minSystemVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.2" requiredIntegratedClassName="NSTouchBar"/>
+    </dependencies>
+    <scenes>
+        <!--Report a bug-->
+        <scene sceneID="7f5-4T-TCq">
+            <objects>
+                <viewController title="Report a bug" storyboardIdentifier="contact" id="JYi-ma-tRk" customClass="BugController" customModule="Macflix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Rdm-db-Lvi">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vic-KM-69c">
+                                <rect key="frame" x="20" y="49" width="410" height="228"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="xsj-Hs-Ijl">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="58k-fR-TKM">
+                                <rect key="frame" x="123" y="6" width="205" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="push" title="Send" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="whj-dH-oci">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="send:" target="JYi-ma-tRk" id="iUi-N7-blV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="btnSend" destination="58k-fR-TKM" id="e4d-uQ-BX0"/>
+                        <outlet property="tfReport" destination="Vic-KM-69c" id="MX4-HL-yAQ"/>
+                    </connections>
+                </viewController>
+                <customObject id="HZf-5u-4rB" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="313" y="-409"/>
+        </scene>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="Macflix" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Macflix" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="About Macflix" id="5kV-Vb-QxS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="openAboutWindow:" target="Ady-hI-5gd" id="CfB-E2-3if"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                                        <menuItem title="Check for updates..." id="yev-nI-GX9">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="checkForNewVersion:" target="Ady-hI-5gd" id="4r3-Ii-DGs"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                                        <menuItem title="Services" id="NMo-om-nkz">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                                        <menuItem title="Hide Macflix" keyEquivalent="h" id="Olw-nP-bQN">
+                                            <connections>
+                                                <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="VT4-aY-XCT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show All" id="Kd2-mp-pUS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem title="Quit Macflix" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Controls" id="E7N-fS-2NP">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Controls" id="PDY-1y-BLV">
+                                    <items>
+                                        <menuItem title="Clear cookies" id="V3u-XH-Cjf">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="clearCookies:" target="Ady-hI-5gd" id="DQK-JF-maW"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="dlP-Wd-zRl"/>
+                                        <menuItem title="Home" keyEquivalent="h" id="3cL-mS-djF">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="Home:" target="Ady-hI-5gd" id="N5p-mf-1RR"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Change user" keyEquivalent="u" id="MYH-Ey-a8P">
+                                            <connections>
+                                                <action selector="switchProfile:" target="Ady-hI-5gd" id="4gQ-b6-uBx"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="kgW-y5-vij"/>
+                                        <menuItem title="Go back" keyEquivalent="z" id="Dbo-4q-3Ga">
+                                            <connections>
+                                                <action selector="goBack:" target="Ady-hI-5gd" id="LpX-LW-r1n"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Go forward" keyEquivalent="Z" id="vqH-7u-oEp">
+                                            <connections>
+                                                <action selector="goForward:" target="Ady-hI-5gd" id="y9k-7h-1sF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="View" id="H8h-7b-M4v">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="View" id="HyV-fh-RgO">
+                                    <items>
+                                        <menuItem title="New window" keyEquivalent="n" id="Ig8-Yy-7fA">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <segue destination="B8D-0N-5wS" kind="show" id="mtR-JW-GiY"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Enter Full Screen" keyEquivalent="f" id="4J7-dP-txa">
+                                            <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="toggleFullScreen:" target="Ady-hI-5gd" id="dU3-MA-1Rq"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Window" id="aUF-d1-5bR">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
+                                    <items>
+                                        <menuItem title="Minimize" keyEquivalent="m" id="OY7-WF-poV">
+                                            <connections>
+                                                <action selector="performMiniaturize:" target="Ady-hI-5gd" id="VwT-WD-YPe"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Zoom" id="R4o-n2-Eq4">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="performZoom:" target="Ady-hI-5gd" id="DIl-cC-cCs"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="eu3-7i-yIM"/>
+                                        <menuItem title="Bring All to Front" id="LE2-aR-0XJ">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="arrangeInFront:" target="Ady-hI-5gd" id="DRN-fu-gQh"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Help" id="wpr-3q-Mcd">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
+                                    <items>
+                                        <menuItem title="Report a bug" keyEquivalent="b" id="669-GU-E8O">
+                                            <connections>
+                                                <segue destination="JYi-ma-tRk" kind="show" id="pxs-hd-HsC"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Macflix Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                            <connections>
+                                                <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Macflix" customModuleProvider="target"/>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95" y="-21"/>
+        </scene>
+        <!--Welcome Controller-->
+        <scene sceneID="NLZ-QW-k3O">
+            <objects>
+                <viewController id="MhU-pI-xMn" customClass="WelcomeController" customModule="Macflix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="FSt-PL-Agc">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="390"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="18A-SF-w4w">
+                                <rect key="frame" x="166" y="245" width="119" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="MacflixIcon" id="v9c-aM-yrY"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kNj-R3-wix">
+                                <rect key="frame" x="186" y="221" width="79" height="26"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Macflix" id="yj1-lv-V3u">
+                                    <font key="font" metaFont="systemBold" size="22"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xro-h0-zVf">
+                                <rect key="frame" x="99" y="45" width="252" height="108"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <textFieldCell key="cell" selectable="YES" alignment="center" id="Z2y-3A-pcI">
+                                    <font key="font" metaFont="system"/>
+                                    <string key="title">Hi. Thank you that you chose Macflix. I'm sure you will not be dissapointed because of its features. If you need help report a bug or open Macflix Help (both in Help menu). Click Start to start using Macflix.</string>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dbp-Ub-pPd">
+                                <rect key="frame" x="93" y="197" width="264" height="16"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="The best unofficial Netflix client for macOS" id="cZy-xt-tFb">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="RNI-hX-5AY">
+                                <rect key="frame" x="0.0" y="173" width="450" height="5"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            </box>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="VrC-dJ-J0B" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="-512"/>
+        </scene>
+        <!--Preferences-->
+        <scene sceneID="1CE-UZ-Fww">
+            <objects>
+                <viewController title="Preferences" id="aox-Vd-F4P" customClass="PreferencesController" customModule="Macflix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="erh-yJ-gyK">
+                        <rect key="frame" x="0.0" y="0.0" width="255" height="107"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FB8-YP-TQp">
+                                <rect key="frame" x="103" y="55" width="126" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="English" drawsBackground="YES" numberOfVisibleItems="5" id="Z4d-zY-ca5">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <objectValues>
+                                        <string>English</string>
+                                        <string>Polski</string>
+                                    </objectValues>
+                                </comboBoxCell>
+                                <connections>
+                                    <action selector="changeRegion:" target="aox-Vd-F4P" id="BjS-2P-JvO"/>
+                                </connections>
+                            </comboBox>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vFJ-oM-26e">
+                                <rect key="frame" x="27" y="61" width="75" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Launguage:" id="IkM-0w-ed8">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="regionBox" destination="FB8-YP-TQp" id="lww-gH-9dN"/>
+                    </connections>
+                </viewController>
+                <customObject id="evF-Bk-Esr" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="658.5" y="-44.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="t7T-qs-Qql">
+            <objects>
+                <viewController id="vyd-8S-bJd" sceneMemberID="viewController">
+                    <view key="view" id="OJZ-Z9-Yd7">
+                        <rect key="frame" x="0.0" y="0.0" width="523" height="449"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RNV-Rg-kA7">
+                                <rect key="frame" x="171" y="347" width="90" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="MacflixIcon" id="SY6-6P-4KB"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xgk-ER-lnh">
+                                <rect key="frame" x="261" y="371" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Macflix" id="LPW-Q4-fGZ">
+                                    <font key="font" metaFont="systemBold" size="26"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="dAM-tN-DFE">
+                                <rect key="frame" x="0.0" y="333" width="523" height="5"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            </box>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nwX-fe-3F0">
+                                <rect key="frame" x="184" y="190" width="154" height="16"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Section in construction" id="kUf-QV-Eyh">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="2Ht-jF-dhN" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870.5" y="359.5"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController id="B8D-0N-5wS" customClass="WindowController" customModule="Macflix" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Macflix" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" toolbarStyle="expanded" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="502" y="381" width="585" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1792" height="1120"/>
+                        <value key="minSize" type="size" width="640" height="270"/>
+                        <toolbar key="toolbar" implicitIdentifier="991BD740-9AAA-49B7-B469-8F6C485922D2" displayMode="iconOnly" sizeMode="regular" id="kub-Eb-JW9">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="tS5-xP-HNL"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="IGO-sD-TAP"/>
+                                <toolbarItem implicitItemIdentifier="9BFFB760-BB89-40A5-9923-71776D91DEA9" label="Switch user" paletteLabel="Switch user" tag="-1" image="NSTouchBarUserGroupTemplate" id="nvs-lP-dvC">
+                                    <size key="minSize" width="50.5" height="27"/>
+                                    <size key="maxSize" width="50.5" height="27"/>
+                                    <connections>
+                                        <action selector="switchProfile:" target="Oky-zY-oP4" id="CLI-67-jmN"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="E3D0A097-5211-42E2-AECF-CDDB89CA4250" label="Home" paletteLabel="Home" tag="-1" image="NSHomeTemplate" id="BHj-p6-LzB">
+                                    <size key="minSize" width="45.5" height="29"/>
+                                    <size key="maxSize" width="45.5" height="29"/>
+                                    <connections>
+                                        <action selector="Home:" target="Oky-zY-oP4" id="igd-bD-nr5"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="6D42F3CA-969C-4969-9AB9-A38C7E4A4EFD" label="Navigation" paletteLabel="Navigation" sizingBehavior="auto" navigational="YES" id="ArV-ca-ZIi">
+                                    <nil key="toolTip"/>
+                                    <segmentedControl key="view" verticalHuggingPriority="750" id="Bp0-lY-vQy">
+                                        <rect key="frame" x="0.0" y="14" width="75" height="23"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="texturedSquare" trackingMode="momentary" id="Df4-nl-nhK">
+                                            <font key="font" metaFont="system"/>
+                                            <segments>
+                                                <segment image="chevron.left" catalog="system" width="32"/>
+                                                <segment image="chevron.forward" catalog="system" width="32" tag="1"/>
+                                            </segments>
+                                        </segmentedCell>
+                                        <connections>
+                                            <action selector="navigation:" target="B8D-0N-5wS" id="0ju-Gq-kIo"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </toolbarItem>
+                                <searchToolbarItem implicitItemIdentifier="DD18A320-287A-4AF4-98E5-6975EC2EFE99" label="Search" paletteLabel="Search" visibilityPriority="1001" id="eU0-CT-8Xl">
+                                    <nil key="toolTip"/>
+                                    <searchField key="view" verticalHuggingPriority="750" textCompletion="NO" id="XeP-ZZ-Jjd">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="21"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" sendsSearchStringImmediately="YES" sendsWholeSearchString="YES" id="gN2-Cq-XIp">
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </searchFieldCell>
+                                        <connections>
+                                            <action selector="search:" target="Oky-zY-oP4" id="q5u-IQ-Q2i"/>
+                                        </connections>
+                                    </searchField>
+                                </searchToolbarItem>
+                                <toolbarItem implicitItemIdentifier="17C6452B-EC0B-4EC0-BE38-278561311F2D" label="Media type" paletteLabel="Media type" sizingBehavior="auto" id="nRy-Ck-ks8">
+                                    <nil key="toolTip"/>
+                                    <popUpButton key="view" verticalHuggingPriority="750" id="cPT-Qy-9ae">
+                                        <rect key="frame" x="0.0" y="14" width="70" height="25"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <popUpButtonCell key="cell" type="roundTextured" title="Serials" bezelStyle="texturedRounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" selectedItem="DFP-BX-l51" id="xSK-tk-1Yi">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="menu"/>
+                                            <menu key="menu" id="4Hu-mH-BbV">
+                                                <items>
+                                                    <menuItem title="Serials" state="on" id="DFP-BX-l51">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <menu key="submenu" title="Serials" id="KuU-ct-VbM">
+                                                            <items>
+                                                                <menuItem title="Comedy" state="on" id="wDv-pT-X3k">
+                                                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                                                    <connections>
+                                                                        <action selector="comedySerials:" target="Oky-zY-oP4" id="qOZ-Ie-kmR"/>
+                                                                    </connections>
+                                                                </menuItem>
+                                                                <menuItem title="Horror" id="gAk-Kx-Yzc">
+                                                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                                                    <connections>
+                                                                        <action selector="horrorSerials:" target="Oky-zY-oP4" id="Gp0-z6-Qtn"/>
+                                                                    </connections>
+                                                                </menuItem>
+                                                                <menuItem title="History" id="ldY-bP-phW">
+                                                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                                                    <connections>
+                                                                        <action selector="historySerials:" target="Oky-zY-oP4" id="TMY-gw-dHx"/>
+                                                                    </connections>
+                                                                </menuItem>
+                                                                <menuItem title="Science and nature" id="X8g-uE-KqE">
+                                                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                                                    <connections>
+                                                                        <action selector="scienceSerials:" target="Oky-zY-oP4" id="ocI-Jj-mU7"/>
+                                                                    </connections>
+                                                                </menuItem>
+                                                                <menuItem title="Documentary" id="a5s-3H-QiH">
+                                                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                                                    <connections>
+                                                                        <action selector="Documentary:" target="Oky-zY-oP4" id="hrq-en-c7Z"/>
+                                                                    </connections>
+                                                                </menuItem>
+                                                            </items>
+                                                        </menu>
+                                                    </menuItem>
+                                                    <menuItem title="Movies" id="OMr-fl-Whx">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <menu key="submenu" title="Movies" id="nug-7h-25T">
+                                                            <items>
+                                                                <menuItem title="Comedy" id="DoJ-B7-2XZ">
+                                                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                                                    <connections>
+                                                                        <action selector="comedyMovie:" target="Oky-zY-oP4" id="fLZ-p0-ian"/>
+                                                                    </connections>
+                                                                </menuItem>
+                                                                <menuItem title="Horror" id="zmL-7d-oQ1">
+                                                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                                                    <connections>
+                                                                        <action selector="horrorsMovie:" target="Oky-zY-oP4" id="HhG-ss-ZtO"/>
+                                                                    </connections>
+                                                                </menuItem>
+                                                                <menuItem title="History" id="pcp-wq-ME0">
+                                                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                                                    <connections>
+                                                                        <action selector="historyMovies:" target="Oky-zY-oP4" id="r8d-Hu-AeK"/>
+                                                                    </connections>
+                                                                </menuItem>
+                                                                <menuItem title="Science and nature" id="1dA-Rm-epd">
+                                                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                                                    <connections>
+                                                                        <action selector="scienceMovies:" target="Oky-zY-oP4" id="86k-JO-HK0"/>
+                                                                    </connections>
+                                                                </menuItem>
+                                                            </items>
+                                                        </menu>
+                                                    </menuItem>
+                                                </items>
+                                            </menu>
+                                            <connections>
+                                                <action selector="changeGenre:" target="B8D-0N-5wS" id="Jih-bX-qG0"/>
+                                            </connections>
+                                        </popUpButtonCell>
+                                    </popUpButton>
+                                    <connections>
+                                        <action selector="changeGenre:" target="B8D-0N-5wS" id="Kp1-P1-uUG"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="26BD4444-F15D-4BD7-BB35-56FBE30CBC5A" label="New tab" paletteLabel="New tab" tag="-1" id="kGZ-sE-Ahn">
+                                    <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                                    <size key="minSize" width="40.5" height="29"/>
+                                    <size key="maxSize" width="40.5" height="29"/>
+                                    <connections>
+                                        <action selector="newWindowForTab:" target="Oky-zY-oP4" id="kPt-eg-wdF"/>
+                                    </connections>
+                                </toolbarItem>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="ArV-ca-ZIi"/>
+                                <toolbarItem reference="IGO-sD-TAP"/>
+                                <toolbarItem reference="nRy-Ck-ks8"/>
+                                <searchToolbarItem reference="eU0-CT-8Xl"/>
+                                <toolbarItem reference="IGO-sD-TAP"/>
+                                <toolbarItem reference="nvs-lP-dvC"/>
+                                <toolbarItem reference="BHj-p6-LzB"/>
+                                <toolbarItem reference="kGZ-sE-Ahn"/>
+                            </defaultToolbarItems>
+                        </toolbar>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
+                        </connections>
+                    </window>
+                    <touchBar key="touchBar" id="vFC-15-4fk">
+                        <touchBarItems>
+                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="6yf-yS-cWN"/>
+                            <touchBarItem id="Tby-Cv-g2e">
+                                <viewController key="viewController" id="RWg-PY-WJ5">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SWK-dh-bOO">
+                                        <rect key="frame" x="7" y="-5" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="backward.end.fill" catalog="system" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Suj-yM-hiS">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarItem id="eP1-ad-CIO">
+                                <viewController key="viewController" id="KKT-mI-p5K">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="E6k-DI-TUJ">
+                                        <rect key="frame" x="7" y="-5" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="playpause.fill" catalog="system" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cbJ-ir-ytb">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarItem id="SYK-RN-8iU">
+                                <viewController key="viewController" id="IAa-f6-hGP">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CES-hT-AQb">
+                                        <rect key="frame" x="7" y="-5" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="forward.end.fill" catalog="system" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="W0L-ik-kS4">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="Wl1-Lk-fQK"/>
+                        </touchBarItems>
+                    </touchBar>
+                    <connections>
+                        <outlet property="filmGenre" destination="cPT-Qy-9ae" id="Pcg-1f-MGI"/>
+                        <outlet property="navigationOutlet" destination="Bp0-lY-vQy" id="IMw-Mx-SZr"/>
+                        <outlet property="searchField" destination="XeP-ZZ-Jjd" id="zWO-pJ-8Sh"/>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                    </connections>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <toolbar implicitIdentifier="09D11707-F4A3-4FD5-970E-AC5832E91C2B" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="o23-yT-ZO5">
+                    <allowedToolbarItems>
+                        <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="bJW-xu-FvH"/>
+                        <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="dzD-ic-ug8"/>
+                        <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="9fk-9H-96m"/>
+                        <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="q5H-u1-Ert"/>
+                        <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="diR-3E-ESW"/>
+                    </allowedToolbarItems>
+                    <defaultToolbarItems>
+                        <toolbarItem reference="bJW-xu-FvH"/>
+                        <toolbarItem reference="dzD-ic-ug8"/>
+                        <toolbarItem reference="diR-3E-ESW"/>
+                        <toolbarItem reference="9fk-9H-96m"/>
+                    </defaultToolbarItems>
+                </toolbar>
+            </objects>
+            <point key="canvasLocation" x="95" y="242"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController title="Main" id="XfG-lQ-9wD" customClass="ViewController" customModule="Macflix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="822" height="592"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <wkWebView wantsLayer="YES" customUserAgent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1 Safari/605.1.15" allowsMagnification="YES" id="qY8-1I-gjj">
+                                <rect key="frame" x="0.0" y="0.0" width="822" height="592"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <wkWebViewConfiguration key="configuration" applicationNameForUserAgent="Chrome">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" audio="YES" video="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="NetflixView" destination="qY8-1I-gjj" id="2TE-4O-JNN"/>
+                    </connections>
+                </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="94" y="898"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MacflixIcon" width="256" height="256"/>
+        <image name="NSHomeTemplate" width="19" height="16"/>
+        <image name="NSTouchBarUserGroupTemplate" width="21" height="14"/>
+        <image name="backward.end.fill" catalog="system" width="15" height="13"/>
+        <image name="chevron.forward" catalog="system" width="10" height="14"/>
+        <image name="chevron.left" catalog="system" width="10" height="14"/>
+        <image name="forward.end.fill" catalog="system" width="15" height="13"/>
+        <image name="playpause.fill" catalog="system" width="23" height="13"/>
+        <image name="plus" catalog="system" width="17" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,213 @@
+
+/* Class = "NSMenuItem"; title = "Macflix"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "Macflix";
+
+/* Class = "NSMenuItem"; title = "Science and nature"; ObjectID = "1dA-Rm-epd"; */
+"1dA-Rm-epd.title" = "Nauka i przyroda";
+
+/* Class = "NSMenuItem"; title = "Home"; ObjectID = "3cL-mS-djF"; */
+"3cL-mS-djF.title" = "Strona główna";
+
+/* Class = "NSMenuItem"; title = "Enter Full Screen"; ObjectID = "4J7-dP-txa"; */
+"4J7-dP-txa.title" = "Otwórz w pełnym ekranie";
+
+/* Class = "NSMenuItem"; title = "Quit Macflix"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Zakończ Macflix";
+
+/* Class = "NSMenuItem"; title = "About Macflix"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "O Macflix";
+
+/* Class = "NSMenuItem"; title = "Report a bug"; ObjectID = "669-GU-E8O"; */
+"669-GU-E8O.title" = "Zgłoś błąd";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Główne menu";
+
+/* Class = "NSToolbarItem"; label = "Navigation"; ObjectID = "ArV-ca-ZIi"; */
+"ArV-ca-ZIi.label" = "Navigacja";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Navigation"; ObjectID = "ArV-ca-ZIi"; */
+"ArV-ca-ZIi.paletteLabel" = "Navigacja";
+
+/* Class = "NSToolbarItem"; label = "Home"; ObjectID = "BHj-p6-LzB"; */
+"BHj-p6-LzB.label" = "Strona główna";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Home"; ObjectID = "BHj-p6-LzB"; */
+"BHj-p6-LzB.paletteLabel" = "Strona główna";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
+"BOF-NM-1cW.title" = "Ustawienia…";
+
+/* Class = "NSMenuItem"; title = "Serials"; ObjectID = "DFP-BX-l51"; */
+"DFP-BX-l51.title" = "Seriale";
+
+/* Class = "NSMenuItem"; title = "Go back"; ObjectID = "Dbo-4q-3Ga"; */
+"Dbo-4q-3Ga.title" = "Wróć";
+
+/* Class = "NSMenuItem"; title = "Comedy"; ObjectID = "DoJ-B7-2XZ"; */
+"DoJ-B7-2XZ.title" = "Komedie";
+
+/* Class = "NSMenuItem"; title = "Controls"; ObjectID = "E7N-fS-2NP"; */
+"E7N-fS-2NP.title" = "Kontrola";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "Pomoc";
+
+/* Class = "NSMenuItem"; title = "Macflix Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "Pomoc Macflix";
+
+/* Class = "NSMenuItem"; title = "View"; ObjectID = "H8h-7b-M4v"; */
+"H8h-7b-M4v.title" = "Widok";
+
+/* Class = "NSMenu"; title = "View"; ObjectID = "HyV-fh-RgO"; */
+"HyV-fh-RgO.title" = "Widok";
+
+/* Class = "NSWindow"; title = "Macflix"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Macflix";
+
+/* Class = "NSMenuItem"; title = "New window"; ObjectID = "Ig8-Yy-7fA"; */
+"Ig8-Yy-7fA.title" = "Nowe okno";
+
+/* Class = "NSTextFieldCell"; title = "Launguage:"; ObjectID = "IkM-0w-ed8"; */
+"IkM-0w-ed8.title" = "Język:";
+
+/* Class = "NSViewController"; title = "Report a bug"; ObjectID = "JYi-ma-tRk"; */
+"JYi-ma-tRk.title" = "Zgłoś błąd";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Pokaż wszystkie";
+
+/* Class = "NSMenu"; title = "Serials"; ObjectID = "KuU-ct-VbM"; */
+"KuU-ct-VbM.title" = "Seriale";
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
+"LE2-aR-0XJ.title" = "Umieść wszystko na wierzchu";
+
+/* Class = "NSTextFieldCell"; title = "Macflix"; ObjectID = "LPW-Q4-fGZ"; */
+"LPW-Q4-fGZ.title" = "Macflix";
+
+/* Class = "NSMenuItem"; title = "Change user"; ObjectID = "MYH-Ey-a8P"; */
+"MYH-Ey-a8P.title" = "Zmień użytkownika";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "Usługi";
+
+/* Class = "NSMenuItem"; title = "Movies"; ObjectID = "OMr-fl-Whx"; */
+"OMr-fl-Whx.title" = "Filmy";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "Zminimalizuj";
+
+/* Class = "NSMenuItem"; title = "Hide Macflix"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Ukryj Macflix";
+
+/* Class = "NSMenu"; title = "Controls"; ObjectID = "PDY-1y-BLV"; */
+"PDY-1y-BLV.title" = "Controls";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
+"R4o-n2-Eq4.title" = "Zoom";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "Clear cookies"; ObjectID = "V3u-XH-Cjf"; */
+"V3u-XH-Cjf.title" = "Clear cookies";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Hide Others";
+
+/* Class = "NSMenuItem"; title = "Science and nature"; ObjectID = "X8g-uE-KqE"; */
+"X8g-uE-KqE.title" = "Science and nature";
+
+/* Class = "NSViewController"; title = "Main"; ObjectID = "XfG-lQ-9wD"; */
+"XfG-lQ-9wD.title" = "Main";
+
+/* Class = "NSTextFieldCell"; title = "Hi. Thank you that you chose Macflix. I'm sure you will not be dissapointed because of its features. If you need help report a bug or open Macflix Help (both in Help menu). Click Start to start using Macflix."; ObjectID = "Z2y-3A-pcI"; */
+"Z2y-3A-pcI.title" = "Hi. Thank you that you chose Macflix. I'm sure you will not be dissapointed because of its features. If you need help report a bug or open Macflix Help (both in Help menu). Click Start to start using Macflix.";
+
+/* Class = "NSComboBoxCell"; title = "English"; ObjectID = "Z4d-zY-ca5"; */
+"Z4d-zY-ca5.title" = "English";
+
+/* Class = "NSComboBoxCell"; Z4d-zY-ca5.ibShadowedObjectValues[0] = "English"; ObjectID = "Z4d-zY-ca5"; */
+"Z4d-zY-ca5.ibShadowedObjectValues[0]" = "English";
+
+/* Class = "NSComboBoxCell"; Z4d-zY-ca5.ibShadowedObjectValues[1] = "Polski"; ObjectID = "Z4d-zY-ca5"; */
+"Z4d-zY-ca5.ibShadowedObjectValues[1]" = "Polski";
+
+/* Class = "NSMenuItem"; title = "Documentary"; ObjectID = "a5s-3H-QiH"; */
+"a5s-3H-QiH.title" = "Documentary";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Window";
+
+/* Class = "NSViewController"; title = "Preferences"; ObjectID = "aox-Vd-F4P"; */
+"aox-Vd-F4P.title" = "Preferences";
+
+/* Class = "NSTextFieldCell"; title = "The best unofficial Netflix client for macOS"; ObjectID = "cZy-xt-tFb"; */
+"cZy-xt-tFb.title" = "The best unofficial Netflix client for macOS";
+
+/* Class = "NSSearchToolbarItem"; label = "Search"; ObjectID = "eU0-CT-8Xl"; */
+"eU0-CT-8Xl.label" = "Search";
+
+/* Class = "NSSearchToolbarItem"; paletteLabel = "Search"; ObjectID = "eU0-CT-8Xl"; */
+"eU0-CT-8Xl.paletteLabel" = "Search";
+
+/* Class = "NSMenuItem"; title = "Horror"; ObjectID = "gAk-Kx-Yzc"; */
+"gAk-Kx-Yzc.title" = "Horror";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "Services";
+
+/* Class = "NSToolbarItem"; label = "New tab"; ObjectID = "kGZ-sE-Ahn"; */
+"kGZ-sE-Ahn.label" = "New tab";
+
+/* Class = "NSToolbarItem"; paletteLabel = "New tab"; ObjectID = "kGZ-sE-Ahn"; */
+"kGZ-sE-Ahn.paletteLabel" = "New tab";
+
+/* Class = "NSTextFieldCell"; title = "Section in construction"; ObjectID = "kUf-QV-Eyh"; */
+"kUf-QV-Eyh.title" = "Section in construction";
+
+/* Class = "NSMenuItem"; title = "History"; ObjectID = "ldY-bP-phW"; */
+"ldY-bP-phW.title" = "History";
+
+/* Class = "NSToolbarItem"; label = "Media type"; ObjectID = "nRy-Ck-ks8"; */
+"nRy-Ck-ks8.label" = "Media type";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Media type"; ObjectID = "nRy-Ck-ks8"; */
+"nRy-Ck-ks8.paletteLabel" = "Media type";
+
+/* Class = "NSMenu"; title = "Movies"; ObjectID = "nug-7h-25T"; */
+"nug-7h-25T.title" = "Movies";
+
+/* Class = "NSToolbarItem"; label = "Switch user"; ObjectID = "nvs-lP-dvC"; */
+"nvs-lP-dvC.label" = "Switch user";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Switch user"; ObjectID = "nvs-lP-dvC"; */
+"nvs-lP-dvC.paletteLabel" = "Switch user";
+
+/* Class = "NSMenuItem"; title = "History"; ObjectID = "pcp-wq-ME0"; */
+"pcp-wq-ME0.title" = "History";
+
+/* Class = "NSMenu"; title = "Macflix"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "Macflix";
+
+/* Class = "NSMenuItem"; title = "Go forward"; ObjectID = "vqH-7u-oEp"; */
+"vqH-7u-oEp.title" = "Go forward";
+
+/* Class = "NSMenuItem"; title = "Comedy"; ObjectID = "wDv-pT-X3k"; */
+"wDv-pT-X3k.title" = "Comedy";
+
+/* Class = "NSButtonCell"; title = "Send"; ObjectID = "whj-dH-oci"; */
+"whj-dH-oci.title" = "Send";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "Help";
+
+/* Class = "NSMenuItem"; title = "Check for updates..."; ObjectID = "yev-nI-GX9"; */
+"yev-nI-GX9.title" = "Check for updates...";
+
+/* Class = "NSTextFieldCell"; title = "Macflix"; ObjectID = "yj1-lv-V3u"; */
+"yj1-lv-V3u.title" = "Macflix";
+
+/* Class = "NSMenuItem"; title = "Horror"; ObjectID = "zmL-7d-oQ1"; */
+"zmL-7d-oQ1.title" = "Horror";
